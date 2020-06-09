@@ -1,0 +1,15 @@
+<div class="star-war-list__main">
+    <a [routerLink]="['/sw-list']">
+        <span class="material-icons">
+            arrow_back_ios
+        </span> GO BACK
+    </a>
+    
+    <mat-progress-bar  *ngIf="!showTable" mode="indeterminate"></mat-progress-bar>
+    <div *ngIf="showTable">
+        <app-star-wars-list
+            [starWarriors]="starWarriors" [currentPage]="currentPage" [totalCount]="favoritesCount"
+            [favoritesCount]="favoritesCount" [canFavorite]="false"
+            [columnsToDisplay]="columnsToDisplay"></app-star-wars-list>
+    </div>
+</div>

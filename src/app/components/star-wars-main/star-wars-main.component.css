@@ -1,0 +1,13 @@
+.main {
+    padding: 20px;
+}
+
+.star-war-search-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+.star-war-search-width {
+    width: 80%;
+}
